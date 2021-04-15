@@ -66,6 +66,23 @@ const routes = [
     component: Registro    
   },
    
+   {
+    path: '/',
+    name: 'Add',
+    component: () => import( '../components/UserCreate.vue') // crear usuarios
+  },
+  {
+    path: '/list',
+    name: 'List',
+    component: () => import( '../components/UserList.vue')  //leer lista de usuarios
+  },
+
+    {
+    path: '/edit/:id',        // se edita un id especifico
+    name: 'Edit',
+    component: () => import( '../components/UserEdit.vue')  //editar lista de usuarios
+  },
+   
   
 ]
 

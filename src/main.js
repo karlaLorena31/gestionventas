@@ -16,18 +16,22 @@ Vue.use(IconsPlugin);
 
 Vue.config.productionTip = false
 
-const firebaseConfig = {
-    apiKey: "AIzaSyB7tWYo5zLFoqAgVeKBZbpWoeYFs6Ulsek",
-    authDomain: "vue-app-d4acd.firebaseapp.com",
-    projectId: "vue-app-d4acd",
-    storageBucket: "vue-app-d4acd.appspot.com",
-    messagingSenderId: "564229448395",
-    appId: "1:564229448395:web:08e21fdb0950a9d893714e"
+/// no use el firebaseDB.js , puse la configuracion en main.js y exporté db 
+/// tambien cambié la regla del cloud Store , cambié false --> a true
+
+const firebaseConfig = {  
+    apiKey: "AIzaSyBuVmplh7X-s_tuZVgeCAMLF1tfyeJTSFk",
+    authDomain: "ventas-559c7.firebaseapp.com",
+    projectId: "ventas-559c7",
+    storageBucket: "ventas-559c7.appspot.com",
+    messagingSenderId: "191501678270",
+    appId: "1:191501678270:web:515d08f09667a4fba590ef"
   };
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
-
+    // Initialize Firebase
+ 
+export const db = firebase.initializeApp(firebaseConfig).firestore();
+ 
+  
 new Vue({
   router,
   store,

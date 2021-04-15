@@ -26,6 +26,13 @@
           <router-link class="nav-link" to="/profile">Profile</router-link>
         </a>
 
+        <a>
+          <router-link class="nav-link" :to='{name:"Add"}'>Añadir Usuarios</router-link>
+        </a>
+        <a>
+          <router-link class="nav-link" :to='{name:"List"}'>Mostrar Usuarios</router-link>
+        </a>
+
          <button type="submit" class="btn btn-primary" @click="logout">Cerrar Sesión</button>
       </div>       
     </div>

@@ -16,7 +16,7 @@ Vue.use(IconsPlugin);
 
 Vue.config.productionTip = false
 
-/// no use el firebaseDB.js , puse la configuracion en main.js y exporté db 
+/// no usé el firebaseDB.js , puse la configuracion en main.js y exporté db 
 /// tambien cambié la regla del cloud Store , cambié false --> a true
 
 const firebaseConfig = {  
